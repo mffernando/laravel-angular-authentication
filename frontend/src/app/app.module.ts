@@ -11,6 +11,7 @@ import { ProfileComponent } from "./components/profile/profile.component";
 import { RequestResetComponent } from "./components/password/request-reset/request-reset.component";
 import { AppRoutingModule } from ".//app-routing.module";
 import { ResponseResetComponent } from "./components/password/response-reset/response-reset.component";
+import { JarwisService } from "./Services/jarwis.service";
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { ResponseResetComponent } from "./components/password/response-reset/res
     ResponseResetComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
-  providers: [],
+  providers: [JarwisService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
